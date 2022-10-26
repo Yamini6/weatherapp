@@ -82,7 +82,7 @@ class Weatherboard  extends React.Component{
      console.log("same use",this.state.totalres)
     }
 render() {
-    var newdate,newdate1,newdate2,newdate3,newdate4,newdate5;
+    var newdate,newdate1,newdate2,newdate3,newdate5;
     //today 
     var today = new Date();
     today.setDate(today.getDate());
