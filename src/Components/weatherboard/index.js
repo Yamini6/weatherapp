@@ -22,7 +22,7 @@ class Weatherboard  extends React.Component{
     
    async componentDidMount() {
     const {lon,lat} = this.state
-      await  axios.get("http://api.openweathermap.org/geo/1.0/direct?q=Hyderabad&limit=5&appid=ba3db7bf7253342b87cca96eee1e6183") 
+      await  axios.get("https://api.openweathermap.org/geo/1.0/direct?q=Hyderabad&limit=5&appid=ba3db7bf7253342b87cca96eee1e6183") 
         .then(res=> res.data)
         .then(result=> {this.setState({result})
         console.log("result11222:::",result,result[0].lat)
@@ -118,7 +118,7 @@ render() {
             <button className='searchforplaces' onClick={this.handleClick} >Search For Places</button>
             <div className="main-weather-img">  
                 {/* <Imageloader></Imageloader> */}
-                <img alt="weather" className="img-desc" src={`http://openweathermap.org/img/wn/${this.state.totalres.current.weather[0].icon}@2x.png`} />
+                <img alt="weather" className="img-desc" src={`https://openweathermap.org/img/wn/${this.state.totalres.current.weather[0].icon}@2x.png`} />
                 </div>
             {/* {this.state.totalres.current.temp} */}
             <div className="main-class-data">
@@ -165,7 +165,7 @@ render() {
             <div className='weather-review1'>
               <p  className="temp-date">  Tommorow     </p>
       {/* <Imageloader></Imageloader> */}
-      <img alt="weather" className="img-desc" src={`http://openweathermap.org/img/wn/${this.state.totalres.daily[0].weather[0].icon}@2x.png`} />
+      <img alt="weather" className="img-desc" src={`https://openweathermap.org/img/wn/${this.state.totalres.daily[0].weather[0].icon}@2x.png`} />
       <div className="temp-data">
               <p className="temp-value"> 
               {(Math.floor(this.state.totalres.daily[0].temp.min))}</p>
@@ -178,7 +178,7 @@ render() {
               {newdate[0]},{newdate[2]} {newdate[1]}
               </p >
               {/* <Imageloader></Imageloader> */}
-              <img alt="weather" className="img-desc" src={`http://openweathermap.org/img/wn/${this.state.totalres.daily[1].weather[0].icon}@2x.png`} />
+              <img alt="weather" className="img-desc" src={`https://openweathermap.org/img/wn/${this.state.totalres.daily[1].weather[0].icon}@2x.png`} />
               <div className="temp-data">
               <p className="temp-value"> 
               {(Math.floor(this.state.totalres.daily[1].temp.min))}</p>
@@ -190,7 +190,7 @@ render() {
               {newdate1[0]},{newdate1[2]} {newdate1[1]}
               </p>
               {/* <Imageloader></Imageloader> */}
-              <img alt="weather" className="img-desc" src={`http://openweathermap.org/img/wn/${this.state.totalres.daily[2].weather[0].icon}@2x.png`} />
+              <img alt="weather" className="img-desc" src={`https://openweathermap.org/img/wn/${this.state.totalres.daily[2].weather[0].icon}@2x.png`} />
               <div className="temp-data">
               <p className="temp-value"> 
               {(Math.floor(this.state.totalres.daily[2].temp.min))}</p>
@@ -202,7 +202,7 @@ render() {
               {newdate2[0]},{newdate2[2]} {newdate2[1]}
               </p>
               {/* <Imageloader></Imageloader> */}
-              <img alt="weather" className="img-desc" src={`http://openweathermap.org/img/wn/${this.state.totalres.daily[3].weather[0].icon}@2x.png`} />
+              <img alt="weather" className="img-desc" src={`https://openweathermap.org/img/wn/${this.state.totalres.daily[3].weather[0].icon}@2x.png`} />
               <div className="temp-data">
               <p className="temp-value"> 
               {(Math.floor(this.state.totalres.daily[3].temp.min))}</p>
@@ -214,7 +214,7 @@ render() {
               {newdate3[0]},{newdate3[2]} {newdate3[1]}
               </p>
               {/* <Imageloader></Imageloader> */}
-              <img alt="weather" className="img-desc" src={`http://openweathermap.org/img/wn/${this.state.totalres.daily[4].weather[0].icon}@2x.png`} />
+              <img alt="weather" className="img-desc" src={`https://openweathermap.org/img/wn/${this.state.totalres.daily[4].weather[0].icon}@2x.png`} />
               <div className="temp-data">
               <p className="temp-value"> 
               {(Math.floor(this.state.totalres.daily[4].temp.min))}</p>
